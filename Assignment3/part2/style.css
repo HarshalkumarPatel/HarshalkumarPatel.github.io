@@ -9,4 +9,13 @@ div {
   font-size: calc(3rem + 2px);
 
   line-height: 7.8;
+  line-height: 7.8;
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  border: 1px solid #c90c02;
+  background-color: #E40C00;
+
 }
