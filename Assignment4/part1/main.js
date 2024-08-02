@@ -21,6 +21,9 @@ const insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
 const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
 const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
 
+// Add eventlisterner.
+randomize.addEventListener('click', result);
+
 // Result function
 function result() {
     let newStory = storyText;
