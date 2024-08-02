@@ -1,3 +1,8 @@
+// Name: Harshalkumar Patel
+// File: main.js
+// Date: 27-July-2024
+// Descripation: Image Gallery
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
