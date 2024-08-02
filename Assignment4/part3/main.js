@@ -1,3 +1,8 @@
+// Name: Harshalkumar Patel
+// File: main.js
+// Date: 27-July-2024
+// Descripation: Bouncing Balls
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
