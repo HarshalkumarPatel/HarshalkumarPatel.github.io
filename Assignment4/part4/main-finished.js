@@ -1,4 +1,6 @@
 // set up canvas
+const para = document.querySelector('p');
+let count = 0;
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
@@ -18,14 +20,25 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Ball {
-  constructor(x, y, velX, velY, color, size) {
+class Shape {
+
+  constructor(x, y, velX, velY) {
     this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
+  }
+
+}
+
+class Ball extends Shape {
+
+  constructor(x, y, velX, velY, color, size) {
+    super(x, y, velX, velY);
+
     this.color = color;
     this.size = size;
+    this.exists = true;
   }
 
   draw() {
@@ -34,6 +47,7 @@ class Ball {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
+
 
   update() {
     if (this.x + this.size >= width) {
